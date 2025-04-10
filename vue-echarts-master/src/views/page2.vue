@@ -4,22 +4,22 @@
             <Col span="8">
                 <div class="list">
                     <div class="left">
-                        <span class='title'><span class="title-gradient">模块一分析</span></span>
-                        <span class="angle1"></span>
+                        <span class='title'><span class="title-gradient">技术与功效</span></span>
+                        <!-- <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
-                        <span class="angle4"></span>
+                        <span class="angle4"></span> -->
                         <div class="chart-68">
-                            <area-chart ref="chart1" id="left_1" :select-range-date="selectRangeDate" :config="cnfigData1"></area-chart>
+                            <span><br>以无人机为载体，结合了嵌入式技术、无线传输技术等，使用北斗导航、GPS 装置、避障装置、超声波装置<br>采用了javas语言编写，采用模块化的软件设计理念，设计主要包括开机登录模块、GPRS 通信模块、实时数据 显示模块、5G 视频监控模块</span>
                         </div>
                         <div class="chart-32">
-                            <radar-chart ref="chart2" id="left_2" :data="chatRadarData"></radar-chart>
+                            <span>·自主巡航、自动收集数据<br>·无线通信、实时监测<br>·自动充电、高扩展性<br>·模块化设计、灵活组装<br>·离子群溯源，智能分析</span>
                         </div>
                     </div>
                 </div>
                 <div class="list">
                     <div class="left">
-                        <span class='title'><span class="title-gradient">模块二分析</span></span>
+                        <span class='title'><span class="title-gradient">2017-2023年中国水质检测设备销量趋势图</span></span>
                         <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
@@ -43,7 +43,7 @@
             <Col span="8">
                 <div class="list">
                     <div class="right">
-                        <span class='title'><span class="title-gradient">模块三分析</span></span>
+                        <span class='title'><span class="title-gradient">无人机飞行数据增长趋势</span></span>
                         <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="list">
                     <div class="right">
-                        <span class='title'><span class="title-gradient">模块四分析</span></span>
+                        <span class='title'><span class="title-gradient">中国无人机市场预测</span></span>
                         <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
@@ -79,7 +79,7 @@
             <Col span="16">
                 <div class="list">
                     <div class="bottom">
-                        <span class='title'><span class="title-gradient">模块五分析</span></span>
+                        <span class='title'><span class="title-gradient">水质监测数据曲线分析</span></span>
                         <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="list">
                     <div class="bottom">
-                        <span class='title'><span class="title-gradient">模块六分析</span></span>
+                        <span class='title'><span class="title-gradient">水质检测设备需求量预测及全球占比</span></span>
                         <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="list">
                     <div class="bottom">
-                        <span class='title'><span class="title-gradient">模块七分析</span></span>
+                        <span class='title'><span class="title-gradient">水质监测数据</span></span>
                         <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
@@ -111,7 +111,7 @@
             <Col span="8">
                 <div class="list right-bottom">
                     <div class="bottom bottom1">
-                        <span class='title'><span class="title-gradient">模块八分析</span></span>
+                        <span class='title'><span class="title-gradient">水质检测参数占比及设备占比</span></span>
                         <span class="angle1"></span>
                         <span class="angle2"></span>
                         <span class="angle3"></span>
@@ -158,117 +158,114 @@ export default {
                 y: 250,
                 radius: 218
             },
-            title: ['数据1:456,789', '数据2:123,12', '数据3:134,23', '数据4:234,234', '数据5:123,123', '数据6:678,123'],
-            // 模块一面积图数据
-            cnfigData1: {
-                color: '#5CB1C1',
-                name: ['（次）', '（人）'],
-                data: [
-                    {
-                        name: '次数',
-                        color: ['#9e70ff', '#6e5eff'],
-                        data: [200, 12, 21, 54, 260, 130, 210],
-                    },
-                    {
-                        name: '人数',
-                        color: ['#48cefd', '#5356f1'],
-                        data: [50, 182, 234, 191, 190, 30, 10],
-                    }
-                ]
-            },
-            configData2: {
-                data: [213, 190, 137, 99, 63, 196, 248, 212, 248, 112]
-            },
-            // 模块一雷达图数据
-            chatRadarData: {
-                title: '标题',
-                position: ['center', '85%'],
-                center: ['50%', '50%'],
-                indicator: [
-                    {text: '分类1'},
-                    {text: '分类2'},
-                    {text: '分类3'},
-                    {text: '分类4'},
-                    {text: '分类5'},
-                    {text: '分类6'}
-                ],
-                data: [
-                    {
-                        name: '次数',
-                        color: '#0DF5F8',
-                        value: [100, 8, 0.40, -80, 2000, 332],
-                    },
-                    {
-                        name: '人数',
-                        color: '#7921AD',
-                        value: [60, 5, 0.30, -100, 1500, 221],
-                    }
-                ]
-            },
+            title: ['Detection and Pollution', ' Traceability Drone ', '', '', '', 'Intelligent Water Quality'],
+            // 模块一
+            // cnfigData1: {
+            //     color: '#5CB1C1',
+            //     name: ['（千台）', '%'],
+            //     data: [
+            //         {
+            //             name: '销量',
+            //             color: ['#9e70ff', '#6e5eff'],
+            //             data: [351.5, 525.6, 730.9, 976.7, 1271.6, 130],
+            //         },
+            //         {
+            //             name: '增长率',
+            //             color: ['#48cefd', '#5356f1'],
+            //             data: [2, 49.5, 39.1, 33.6, 30.1, 30],
+            //         }
+            //     ]
+            // },
+            // configData2: {
+            //     data: [213, 190, 137, 99, 63, 196, 248, 212, 248, 112]
+            // },
+            // // 模块一雷达图数据
+            // chatRadarData: {
+            //     title: '标题',
+            //     position: ['center', '85%'],
+            //     center: ['50%', '50%'],
+            //     indicator: [
+            //         {text: '分类1'},
+            //         {text: '分类2'},
+            //         {text: '分类3'},
+            //         {text: '分类4'},
+            //         {text: '分类5'},
+            //         {text: '分类6'}
+            //     ],
+            //     data: [
+            //         {
+            //             name: '次数',
+            //             color: '#0DF5F8',
+            //             value: [100, 8, 0.40, -80, 2000, 332],
+            //         },
+            //         {
+            //             name: '人数',
+            //             color: '#7921AD',
+            //             value: [60, 5, 0.30, -100, 1500, 221],
+            //         }
+            //     ]
+            // },
             // 模块二雷达图数据
             officeRadarData: {
-                title: '标题',
+                title: '雷达图',
                 position: ['center', '85%'],
                 center: ['50%', '50%'],
                 indicator: [
-                    {text: '分类1'},
-                    {text: '分类2'},
-                    {text: '分类3'},
-                    {text: '分类4'},
-                    {text: '分类5'},
-                    {text: '分类6'},
-                    {text: '分类7'},
-                    {text: '分类8'},
-                    {text: '分类9'},
-                    {text: '分类10'}
+                    {text: '2017'},
+                    {text: '2018'},
+                    {text: '2019'},
+                    {text: '2020'},
+                    {text: '2021'},
+                    {text: '2022'},
+                    {text: '2023'}
                 ],
                 data: [
                     {
-                        name: '数据',
+                        name: '销量',
                         color: '#55D35B',
-                        value: [213, 190, 137, 99, 63, 196, 248, 212, 248, 112],
+                        value: [19345,34872,65547,47468,70587,82097,93607],
                     }
                 ]
             },
             // 模块三雷达图数据
             friendRadarData: {
-                title: '分类标题',
+                title: '雷达图',
                 position: ['center', '85%'],
                 center: ['50%', '50%'],
                 indicator: [
-                    {text: '分类1'},
-                    {text: '分类2'},
-                    {text: '分类3'},
-                    {text: '分类4'},
-                    {text: '分类5'},
-                    {text: '分类6'}
+                    {text: '2018'},
+                    {text: '2019'},
+                    {text: '2020'},
+                    {text: '2021'},
+                    {text: '2022'},
+                    {text: '2023'}
                 ],
                 data: [
                     {
-                        name: '数据',
+                        name: '飞行数据',
                         color: '#FA8486',
-                        value: [100, 8, 0.40, -80, 2000, 332],
+                        value: [25,41,53,81,91,115],
                     }
                 ]
             },
             // 模块四雷达图数据
             momentsRadarData: {
-                title: '标题',
+                title: '雷达图',
                 position: ['center', '85%'],
                 center: ['50%', '50%'],
                 indicator: [
-                    {text: '分类1'},
-                    {text: '分类2'},
-                    {text: '分类3'},
-                    {text: '分类4'},
-                    {text: '分类5'},
-                    {text: '分类6'}
+                    {text: '2020'},
+                    {text: '2021'},
+                    {text: '2022'},
+                    {text: '2023'},
+                    {text: '2024'},
+                    {text: '2025E'},
                 ],
                 data: [
                     {
-                        name: '个数',
+                        name:'销售额',
                         color: '#D91748',
-                        value: [100, 8, 0.40, -80, 2000, 332],
+                        value: [670.04,857.24,1065,1571.23,1737,2007],
                     }
                 ]
             },
@@ -639,12 +636,18 @@ export default {
                 }
 
                 .chart-68 {
+                    color: rgb(27, 166, 225); /* 设置字体颜色为蓝色 */
+                    font-size: 16px; /* 调节字号（像素单位） */
+                    font-family: 'Arial', sans-serif; /* 设置字体 */
                     width: 68%;
                     height: 100%;
                     float: left;
                 }
 
                 .chart-32 {
+                    color: rgb(243, 127, 131); /* 设置字体颜色为蓝色 */
+                    font-size: 16px; /* 调节字号（像素单位） */
+                    font-family:'Courier New', Courier, monospace; /* 设置字体 */
                     width: 32%;
                     height: 100%;
                     float: left;

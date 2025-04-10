@@ -37,10 +37,10 @@ export default {
                 ],
                 grid:
                     {
-                        top: '15%',
+                        top: '14%',
                         left: '3%',
                         right: '5%',
-                        bottom: '8%',
+                        bottom: '5%',
                         containLabel: true,
                     },
                 xAxis: [
@@ -60,14 +60,14 @@ export default {
                             }
                         },
                         axisTick: {show: false},
-                        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月']
+                        data: ['2018', '2019', '2020', '2021', '2022', '2023']
                     },
                 ],
                 yAxis:
                     {
                         type: 'value',
                         min: 0,
-                        max: 300,
+                        max: 160,
                         axisLabel: {
                             color: '#61B9C8',
                             fontSize: 9,
@@ -84,7 +84,7 @@ export default {
                         axisTick: {
                             length: 3
                         },
-                        name: '(人)',
+                        name: '(万架)',
                         nameGap: -5,
                         nameTextStyle: {
                             color: '#61B9C8',
@@ -120,7 +120,7 @@ export default {
                             }, //背景渐变色
                             borderRadius: [3.5, 3.5, 0, 0],
                         },
-                        data: [120, 102, 101, 134, 190, 130, 120, 190, 130, 120]
+                        data: [11,16,12,29,10,24]
                     },
                     {
                         name: '总数',
@@ -131,7 +131,7 @@ export default {
                             color: '#8C14EA',
                             borderRadius: [3.5, 3.5, 0, 0,],
                         },
-                        data: [120, 132, 101, 134, 90, 130, 110, 90, 130, 120]
+                        data: [25,41,53,81,91,115]
                     },
 
                 ]

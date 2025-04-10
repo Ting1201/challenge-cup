@@ -36,7 +36,7 @@ export default {
                 grid: {
                     top: '12%',
                     bottom: '12%',
-                    left: "10%",
+                    left: "13%",
                     right: '10%',
                     containLabel: false
                 },
@@ -58,16 +58,16 @@ export default {
                             fontSize: 10,
                             interval: 0,
                         },
-                        data: ["分类1", "分类2", "分类3", "分类4", "分类5", "分类6", "分类7", "分类8", "分类9", "分类10"],
+                        data: ["2017", "2018", "2019", "2020", "2021", "2022", "2023"],
                     }
                 ],
                 yAxis: [
                     {
                         type: 'value',
                         scale: true,
-                        max: 400,
+                        max: 100000,
                         min: 0,
-                        interval: 50,
+                        interval: 10000,
                         axisLine: {
                             symbol: ['none', 'arrow'],
                             symbolSize: [6, 6],
@@ -83,7 +83,7 @@ export default {
                         splitLine: {
                             show: false,
                         },
-                        name: '(小时)',
+                        name: '台',
                         nameGap: -5,
                         nameTextStyle: {
                             color: '#61B9C8',
@@ -95,7 +95,7 @@ export default {
                 ],
                 series: [
                     {
-                        name: '数据',
+                        name: '销量',
                         type: 'bar',
                         itemStyle: {
                             color:{
@@ -117,7 +117,7 @@ export default {
                         },
                         barWidth: 10,
                         barCategoryGap: 10,
-                        data: [213, 190, 137, 99, 63, 196, 248, 212, 248, 112]
+                        data: [19345,34872,65547,47468,70587,82097,93607]
                     },
                 ]
             };

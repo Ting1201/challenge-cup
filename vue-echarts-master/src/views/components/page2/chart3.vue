@@ -50,12 +50,12 @@ export default {
                 grid: {
                     top: '12%',
                     bottom: '12%',
-                    left: '5%',
+                    left: '10%',
                     right: '5%',
                 },
                 legend: {
-                    right: '5%',
-                    top: '10%',
+                    right: '3.5%',
+                    top: '2%',
                     itemWidth: 7,
                     itemHeight: 7,
                     textStyle: {
@@ -82,14 +82,14 @@ export default {
                         inside: true
                     },
                     z: 2,
-                    data: this.setData('x')
+                    data: [2020,2021,2022,2023,2024,2025]
                 },
                 yAxis:
                     {
                         type: 'value',
-                        interval: 50,
-                        min: 0,
-                        max: 400,
+                        interval: 200,
+                        min: 500,
+                        max: 2000,
                         splitNumber: 7,
                         axisLine: {
                             symbol: ['none', 'arrow'],
@@ -105,23 +105,24 @@ export default {
                         },
                         splitLine: {
                             show: false,
-                        },
-                        name: '(个)',
-                        nameGap: -10,
-                        nameTextStyle: {
-                            color: '#61B9C8',
-                            fontSize: 9,
-                            align: 'right',
-                            padding: [0, 6, 0, 0]
-                        },
+                        }
+                        // ,
+                        // name: '（亿元）',
+                        // nameGap: -10,
+                        // nameTextStyle: {
+                        //     color: '#61B9C8',
+                        //     fontSize: 9,
+                        //     align: 'right',
+                        //     padding: [0, 6, 0, 0]
+                        // },
                     },
 
                 series: [{
-                    name: '图例',
+                    name: '销售额',
                     type: 'line',
                     symbol: 'none',
                     smooth: true,
-                    data: this.setData('s'),
+                    data: [670.04,857.24,1065,1571.23,1737,2007],
                     lineStyle: {
                         width: 1,
                         color:{

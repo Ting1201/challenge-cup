@@ -50,15 +50,15 @@ export default {
                         color: '#61B9C8',
                         fontSize: 9
                     },
-                    data: ["2017", "4", "7", "10", "2018", "4", "7"]
+                    data: ["2023-10-19","2023-10-20",  "2023-10-21", "2023-10-22","2023-10-23","2023-10-24","2023-10-25"]
                 },
                 yAxis: [
                     {
                         type: 'value',
                         scale: true,
-                        max: 400,
-                        min: 0,
-                        interval: 50,
+                        max: 15,
+                        min: -3,
+                        interval: 3,
                         axisLine: {
                             symbol: ['none', 'arrow'],
                             symbolSize: [6, 6],
@@ -71,7 +71,7 @@ export default {
                             showMaxLabel: false,
                             fontSize: 9
                         },
-                        name: '(次)',
+                        name: '(℃)',
                         nameGap: -10,
                         nameTextStyle: {
                             color: '#61B9C8',
@@ -86,8 +86,8 @@ export default {
                     {
                         type: 'value',
                         scale: true,
-                        max: 400,
-                        min: 0,
+                        max: 15,
+                        min: -3,
                         axisLine: {
                             symbol: ['none', 'arrow'],
                             symbolSize: [6, 6],
@@ -99,16 +99,18 @@ export default {
                             color: '#61B9C8',
                             showMaxLabel: false,
                             fontSize: 9
-                        },
-                        name: '(个)',
-                        nameGap: -10,
-                        nameTextStyle: {
-                            color: '#61B9C8',
-                            fontSize: 9,
-                            align: 'left',
-                            padding: [0, 0, 0, 6]
-                        },
-                        interval: 50,
+                        }
+                        // ,
+                        // name: '(个)',
+                        // nameGap: -10,
+                        // nameTextStyle: {
+                        //     color: '#61B9C8',
+                        //     fontSize: 9,
+                        //     align: 'left',
+                        //     padding: [0, 0, 0, 6]
+                        // }
+                        ,
+                        interval: 3,
                         splitLine: {
                             show: false,
                         },
@@ -116,7 +118,7 @@ export default {
                 ],
                 series: [
                     {
-                        name: '次数',
+                        name: '水质检测',
                         type: 'line',
                         smooth: true,
                         symbol: 'none',
@@ -126,10 +128,10 @@ export default {
                         itemStyle: {
                             color: '#F39800'
                         },
-                        data: [50, 132, 100, 300, 90, 230, 210]
+                        data: [10,11.14,13,11.14,12,12.1,9]
                     },
                     {
-                        name: '人数',
+                        name: '排污监测',
                         yAxisIndex: 1,
                         type: 'line',
                         smooth: true,
@@ -141,7 +143,7 @@ export default {
                         itemStyle: {
                             color: '#BF232A'
                         },
-                        data: [330, 310, 132, 100, 300, 90, 230]
+                        data: [1.57,-2,1.57,4.9,3,1.6,0]
                     },
                 ]
             };
